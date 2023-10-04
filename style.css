@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80vw;
+    height: 500px;
+    border: solid 3px red;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(./imagem/caminho\ do\ mario.jpg );
+}
+
+.tubo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left:70px;
+    animation: tubo-animation 2s infinite linear; 
+
+}
+
+.mario {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+   
+}
+
+
+.jump{
+
+    animation: jump 500ms ease-out;
+}
+
+
+@keyframes tubo-animation {
+
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
